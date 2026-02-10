@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f2f5f9;
+}
+
+/* Navbar */
+nav {
+  background: #1e293b;
+  padding: 18px 40px;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* Page Layout */
+.page {
+  padding: 40px;
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-top: 20px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+th {
+  background: #0f172a;
+  color: white;
+  padding: 14px;
+}
+
+td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+  background: #f8fafc;
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 3px;
+}
+
+.view { background: #3b82f6; color: white; }
+.edit { background: #f59e0b; color: white; }
+.delete { background: #ef4444; color: white; }
+.add { background: #10b981; color: white; }
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Form */
+form {
+  width: 420px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  margin-top: 5px;
+}
+
+label {
+  font-weight: 600;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* Details card */
+.details p {
+  margin-bottom: 12px;
+  font-size: 17px;
+}
+.book-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.book-cover {
+  width: 220px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.book-info h1 {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  color: #64748b;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+.meta {
+  margin: 12px 0;
+  line-height: 1.8;
+}
+
+.section {
+  margin-top: 24px;
+}
+
+.section h3 {
+  margin-bottom: 10px;
+  color: #0f172a;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 6px;
+}
