@@ -88,8 +88,10 @@ tr:hover {
 
 /* Form */
 form {
-  width: 420px;
+  width: 100%;
+  max-width: 420px;
 }
+
 
 input {
   width: 100%;
@@ -154,4 +156,51 @@ label {
   color: #0f172a;
   border-bottom: 2px solid #e2e8f0;
   padding-bottom: 6px;
+}
+
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    gap: 12px;
+    padding: 14px 20px;
+    text-align: center;
+  }
+
+  .page {
+    padding: 20px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+    margin: 6px 0;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .book-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .book-cover {
+    width: 100%;
+    height: auto;
+  }
 }
