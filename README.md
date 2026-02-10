@@ -1,30 +1,32 @@
-# Book Inventory Management System
 
-This is a Book Inventory Management System built using React.
+# 📚 Book Inventory Management System
 
-# Run the Project
+A simple Book Inventory Management System built using **React + Vite**.  
+This project allows users to **Add, View, Edit, and Delete books** from inventory.
 
- download the repository
- Open in VS Code
- Run:
+---
 
-npm install
-npm run dev
-
-# Open browser at:
-http://localhost:5173
-
-# feature
+## 🚀 Features
 
 - Add new books
+- View all books
 - Edit book details
 - Delete books
-- View book list
-- Routing using React Router
+- React Router navigation
+- Clean component structure
 
-## 🛠 Tech Stack
+---
+
+## 🛠️ Tech Stack
 
 - React
 - Vite
-- React Router
+- React Router DOM
 - CSS
+
+---
+
+# start project
+npm install
+npm run dev
+
