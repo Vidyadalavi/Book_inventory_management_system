@@ -23,48 +23,53 @@ function BookTable({ books, onDelete }) {
   return (
     <table>
       <thead>
-        <tr>
+      <tr>
           <th>ID</th>
           <th>Title</th>
           <th>Author</th>
           <th>Actions</th>
         </tr>
-      </thead>
+       </thead>
 
       <tbody>
-        {books.map((book) => (
-          <tr key={book.id}>
-            <td>{book.id}</td>
-            <td>{book.title}</td>
+  {books.map((book) => (
+    <tr key={book.id}>
+      <td data-label="ID">{book.id}</td>
 
-            {/* Show author name instead of id */}
-            <td>{authors[book.userId]}</td>
+      <td data-label="Title">{book.title}</td>
 
-            <td>
-              <button
-                className="btn view"
-                onClick={() => navigate(`/book/${book.id}`)}
-              >
-                View
-              </button>
+      {/* Show author name instead of id */}
+      <td data-label="Author">
+        {authors[book.userId]}
+      </td>
 
-              <button
-                className="btn edit"
-                onClick={() => navigate(`/edit/${book.id}`)}
-              >
-                Edit
-              </button>
+      <td data-label="Actions" className="actions">
+        <button
+          className="btn view"
+          onClick={() => navigate(`/book/${book.id}`)}
+        >
+          View
+        </button>
 
-              <button
-                className="btn delete"
-                onClick={() => onDelete(book.id)}
-              >
-                Delete
-              </button>
-            </td>
-          </tr>
-        ))}
-      </tbody>
+        <button
+          className="btn edit"
+          onClick={() => navigate(`/edit/${book.id}`)}
+        >
+          Edit
+        </button>
+
+        <button
+          className="btn delete"
+          onClick={() => onDelete(book.id)}
+        >
+          Delete
+        </button>
+      </td>
+    </tr>
+  ))}
+</tbody>
+
+           
     </table>
   );
 }
